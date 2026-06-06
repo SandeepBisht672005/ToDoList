@@ -1,0 +1,211 @@
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  border-left: 4px solid transparent;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.overdue {
+  border-left-color: #e53e3e;
+  background: #fff5f5;
+}
+
+.completed {
+  opacity: 0.6;
+  border-left-color: #48bb78;
+}
+
+.left {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1;
+}
+
+.dragHandle {
+  cursor: grab;
+  color: #cbd5e0;
+  font-size: 1.2rem;
+  margin-top: 2px;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.dragHandle:hover {
+  color: #6c63ff;
+}
+
+.dragHandle:active {
+  cursor: grabbing;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+  cursor: pointer;
+  accent-color: #6c63ff;
+  flex-shrink: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.completed .title {
+  text-decoration: line-through;
+  color: #718096;
+}
+
+.description {
+  font-size: 0.85rem;
+  color: #718096;
+  margin: 0;
+}
+
+.meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.due {
+  font-size: 0.78rem;
+  color: #a0aec0;
+}
+
+.overdueText {
+  color: #e53e3e;
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.editBtn {
+  background: #edf2ff;
+  color: #6c63ff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.editBtn:hover {
+  background: #dde4ff;
+}
+
+.deleteBtn {
+  background: #fff5f5;
+  color: #e53e3e;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.deleteBtn:hover {
+  background: #fed7d7;
+}
+
+.editInput {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  font-family: inherit;
+  margin-bottom: 8px;
+}
+
+.editInput:focus {
+  border-color: #6c63ff;
+}
+
+.editTextarea {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  font-family: inherit;
+  resize: vertical;
+  margin-bottom: 8px;
+}
+
+.editTextarea:focus {
+  border-color: #6c63ff;
+}
+
+.editActions {
+  display: flex;
+  gap: 8px;
+}
+
+.saveBtn {
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.saveBtn:hover {
+  background: #574fd6;
+}
+
+.cancelBtn {
+  background: #f7fafc;
+  color: #718096;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 7px 16px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.cancelBtn:hover {
+  background: #edf2f7;
+}
+
+.error {
+  color: #e53e3e;
+  font-size: 0.82rem;
+  margin: 0 0 8px 0;
+}
