@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:5000/api/tasks';
+const BASE_URL = 'https://personal-task-manager-api-sawg.onrender.com/api/tasks';
 
 export async function fetchTasks() {
   const res = await fetch(BASE_URL);
